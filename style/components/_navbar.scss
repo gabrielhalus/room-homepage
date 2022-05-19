@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    gap: 56px;
+
+    position: absolute;
+    top: 64px;
+    left: 64px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 33px;
+
+        a {
+            color: #fff;
+            font-size: 1em;
+            text-decoration: none;
+
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+
+                width: 0;
+                height: 1px;
+                background: #fff;
+                border-radius: 1px;
+
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                transition: width .2s ease;
+            }
+
+            &:hover::after {
+                width: 80%;
+            }
+        }
+    }
+}

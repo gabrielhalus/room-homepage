@@ -1,0 +1,23 @@
+.slider-btn {
+    background: none;
+    border: none;
+    outline: none;
+
+    display: block;
+    $size: calc(11.111111vw / 2);
+    width: $size;
+    height: $size;
+    background: #000;
+
+    &.left-slider-btn::after {
+        content: url('/style/assets/images/icon-angle-left.svg');
+    }
+
+    &.right-slider-btn::after {
+        content: url('/style/assets/images/icon-angle-right.svg');
+    }
+
+    &:hover {
+        background: #444;
+    }
+}
